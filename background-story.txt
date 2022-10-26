@@ -1,0 +1,7 @@
+Membuat Full Website Tentang Ticketing and Reviewing Film
+
+Pages:
+1. Home
+2. Search
+3. Review
+4. Buy a ticket
