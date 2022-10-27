@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -45,11 +47,12 @@ module.exports = {
         900: '#064e3b',
       },
     },
-    fontFamily: {
-      'plus-jakarta': ['"Plus Jakarta Sans"', 'sans-serif'],
-      display: ['Source Serif Pro', 'Georgia', 'serif'],
-      body: ['Synonym', 'system-ui', 'sans-serif'],
+    extend: {
+      fontFamily: {
+        'plus-jakarta': ["Plus Jakarta Sans", ...defaultTheme.fontFamily.sans]
+      },
     },
+
   },
   plugins: [],
 }
