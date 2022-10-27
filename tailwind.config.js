@@ -47,6 +47,8 @@ module.exports = {
     },
     fontFamily: {
       'plus-jakarta': ['"Plus Jakarta Sans"', 'sans-serif'],
+      display: ['Source Serif Pro', 'Georgia', 'serif'],
+      body: ['Synonym', 'system-ui', 'sans-serif'],
     },
   },
   plugins: [],
