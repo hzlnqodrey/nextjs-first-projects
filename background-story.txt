@@ -1,7 +1,7 @@
 Membuat Full Website Tentang Ticketing and Reviewing Film
-
+Referensi https://www.themoviedb.org/
 Pages:
 1. Home
 2. Search
 3. Review
-4. Buy a ticket
+4. Avail Cinema in your Country/Region/City!
