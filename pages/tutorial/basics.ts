@@ -55,3 +55,4 @@ for( let i = 0; i < 10; i++ ) {
 const out: number[] = [4, 5, 6].map((v) => v * 10)
 console.log(out)
 
+export default out;
