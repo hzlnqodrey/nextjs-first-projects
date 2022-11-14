@@ -14,16 +14,20 @@ console.log(myName);
 // generic array types
 const myValues: Array<number> = [1, 2, 3, "saya"] // emang dibiarin error
 
-// object
-
-const myPerson: {
+// INTERFACE
+interface Person {
     first: string;
     second: string;
     age: number;
-} = {
+    cool: boolean;
+}
+
+// object
+const myPerson: Person = {
     first: "Hazlan",
     second: "Qodri",
-    age: 23
+    age: 23,
+    cool: true
 };
 
 export default { myNumber, myRegex };
