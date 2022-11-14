@@ -1,7 +1,8 @@
-export default function foo(a: number, b: number): number {
+function multiply(a: number, b: number): number {
     return a * b
 }
 
-const multiply: number = foo(20, 10);
+export default multiply;
 
-console.log(multiply);
+export const addStrings = (str1: string, str2: string): string => `${str1} ${str2}`
+
