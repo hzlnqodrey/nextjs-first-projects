@@ -10,3 +10,9 @@ export const addStrings = (str1: string, str2: string): string => `${str1} ${str
 
 // union data type
 export const format = (title: string, param: string | number): string => `${title} ${param}`
+
+// void function
+export const printFormat = (title: string, param: string | number): void => {
+    console.log(format(title, param))
+    
+}
