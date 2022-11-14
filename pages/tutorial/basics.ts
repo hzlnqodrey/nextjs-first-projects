@@ -37,5 +37,19 @@ const IDs: Record<number, string> = {
 }
 IDs[30] = "c"
 
+// Conditional
+if ( IDs[30] === "D" ) {
+
+}
+
+// Loop
+for( let i = 0; i < 10; i++ ) {
+    console.log(i);
+}
+
+// forEach
+[1, "kamu", 2, 3, "saya"].forEach((v) => console.log(v));
+
+
 export default { myNumber, myRegex };
 
