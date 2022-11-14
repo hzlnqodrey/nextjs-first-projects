@@ -1,5 +1,6 @@
+/* eslint-disable import/no-anonymous-default-export */
 // string
-let userName: string = "Qodri";
+let userName: string = "Hazlan Qodri";
 
 // number
 let myNumber: number = 10;
@@ -12,7 +13,7 @@ const myName: string[] = userName.split(" ") // ["Q", "o", "d", "r", "i"];
 console.log(myName);
 
 // generic array types
-const myValues: Array<number> = [1, 2, 3, "saya"] // emang dibiarin error
+const myValues: Array<number> = [1, 2, 3] // emang dibiarin error
 
 // INTERFACE
 interface Person {
@@ -50,6 +51,7 @@ for( let i = 0; i < 10; i++ ) {
 // forEach
 [1, "kamu", 2, 3, "saya"].forEach((v) => console.log(v));
 
-
-export default { myNumber, myRegex };
+// Map
+const out: number[] = [4, 5, 6].map((v) => v * 10)
+console.log(out)
 
