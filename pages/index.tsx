@@ -13,7 +13,7 @@ export default function Home() {
 
       <main className="">
         <h1 className="w-full text-center py-12 font-plus-jakarta text-3xl font-bold">
-          Hello world! Im Montserrat Font
+          Hello world! Im Plus Jakarta   Font
         </h1>
       </main>
     
