@@ -30,5 +30,12 @@ const myPerson: Person = {
     cool: true
 };
 
+// Record
+const IDs: Record<number, string> = {
+    10: "a",
+    20: "b"
+}
+IDs[30] = "c"
+
 export default { myNumber, myRegex };
 
