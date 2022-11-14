@@ -27,3 +27,8 @@ export const fetchData = (url: string): Promise<string> =>
 function introduce(salutation: string, ...names: string[]): string {
     return `${salutation} ${names.join(" ")}`;
 }
+
+// Miscocenption about TypeScript => TypeChecking at Compile time not in the runtime env
+export function getUser(user: { first: string, last: string}): string {
+    return `${user.first} ${user.last}`
+}
