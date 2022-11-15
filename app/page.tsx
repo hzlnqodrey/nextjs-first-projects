@@ -2,6 +2,9 @@ import Image from 'next/image'
 import styles from './page.module.css'
 
 export default function Home() {
+
+  const names: string[] = ["Hazlan Qodrey", "Rivano ATK", "Fauzan", "Cemilik"]
+
   return (
     <div className={styles.container}>
       <main className={styles.main}>
@@ -38,6 +41,19 @@ export default function Home() {
             <p>Deploy your Next.js site to a public URL with Vercel.</p>
           </a>
         </div>
+
+        {/* TUTORIAL LEARNING */}
+        {/* 1. Props */}
+        <div className='container mx-auto px-10 py-10 '>
+          <ul className='list-none'>
+            {names.map((name) => (
+              <li key={name}>{name}</li>
+            ))}
+          </ul>
+        </div>
+
+        {/* 2. State */}
+        
       </main>
 
       <footer className={styles.footer}>
