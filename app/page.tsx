@@ -10,7 +10,7 @@ interface HeaderProps {
 
 function Header(props: HeaderProps) {
   
-  return <h1>{ props.title ? props.title : 'Default Title'}</h1>
+  return <h1 className="text-center mt-8 mb-8">{ props.title ? props.title : 'Default Title'}</h1>
 }
 
 export default function Page() {
@@ -27,7 +27,7 @@ export default function Page() {
 
 
   return (
-    <div className="container mx-auto mt-20">
+    <div className="container mx-auto mt-20 mb-20 border-2 border-yellow-50 ">
       <div className="flex justify-around items-center text-center mb-20">
         <div className="py-24 xl:w-60 xl:h-60 lg:w-40 lg:h-40 md:w-24 md:h-24 sm:w-16 sm:h-16  bg-pink-700">01</div>
         <div className="py-24 xl:w-60 xl:h-60 lg:w-40 lg:h-40 md:w-24 md:h-24 sm:w-16 sm:h-16  bg-pink-700">02</div>
@@ -36,7 +36,7 @@ export default function Page() {
 
       <Header title="Develop. Preview. Ship. 🚀"/>
 
-      <div className="w-full h-40 justify-center items-center text-center bg-red-400 py-16">
+      <div className="w-full h-40 justify-center items-center text-center bg-gradient-to-t from-teal-400 to-cyan-400 py-16">
         box
       </div>
 
