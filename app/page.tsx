@@ -2,6 +2,17 @@
 
 import React from "react";
 
+// Interface Header
+interface HeaderProps {
+  title: string
+  children?: React.ReactNode
+}
+
+function Header(props: HeaderProps) {
+  
+  return <h1>{ props.title ? props.title : 'Default Title'}</h1>
+}
+
 export default function Page() {
 
   const names: string[] = ["Rivano ATK", "Hazlan Muhammad Qodri", "Riko", "Fauzan"]
@@ -17,6 +28,7 @@ export default function Page() {
 
   return (
     <div className="container mx-auto px-20 py-10 border-1 border-red">
+      <Header title="Develop. Preview. Ship. 🚀"/>
       <main className="flex flex-col justify-center align-bottom text-green-400 border-2 border-sky-500">
         {/* Title */}
         <h1 className="text-3xl font-bold underline text-center">
@@ -31,7 +43,7 @@ export default function Page() {
         </ul>
 
         {/* Button */}
-        <button onClick={handleClick}> Like({likes}) </button>
+        <button onClick={handleClick}> Like ({likes}) </button>
         
       </main>
     </div>
