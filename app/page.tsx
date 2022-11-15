@@ -27,14 +27,25 @@ export default function Page() {
 
 
   return (
-    <div className="container mx-auto px-20 py-10 border-1 border-red">
+    <div className="container mx-auto mt-20">
+      <div className="flex justify-around items-center text-center mb-20">
+        <div className="py-24 xl:w-60 xl:h-60 lg:w-40 lg:h-40 md:w-24 md:h-24 sm:w-16 sm:h-16  bg-pink-700">01</div>
+        <div className="py-24 xl:w-60 xl:h-60 lg:w-40 lg:h-40 md:w-24 md:h-24 sm:w-16 sm:h-16  bg-pink-700">02</div>
+        <div className="py-24 xl:w-60 xl:h-60 lg:w-40 lg:h-40 md:w-24 md:h-24 sm:w-16 sm:h-16  bg-pink-700">03</div>
+      </div>
+
       <Header title="Develop. Preview. Ship. 🚀"/>
-      <main className="flex flex-col justify-center align-bottom text-green-400 border-2 border-sky-500">
+
+      <div className="w-full h-40 justify-center items-center text-center bg-red-400 py-16">
+        box
+      </div>
+
+      <main className="h-screen flex flex-col justify-around items-center text-green-400 border-2 border-sky-500 ">
         {/* Title */}
         <h1 className="text-3xl font-bold underline text-center">
           Hello, Next.js!
         </h1>
-      
+
         {/* List */}
         <ul className="list-none border-4  border-red-500 text-center mt-5">
           {names.map((name) => (
@@ -43,7 +54,7 @@ export default function Page() {
         </ul>
 
         {/* Button */}
-        <button onClick={handleClick}> Like ({likes}) </button>
+        <button className="w-1/6 h-2/12 rounded-[12px] border-2 border-sky-300 mt-5" onClick={handleClick}> Like ({likes}) </button>
         
       </main>
     </div>
