@@ -1,13 +1,19 @@
 'use client';
 
+import React from "react";
+
 export default function Page() {
 
   const names: string[] = ["Rivano ATK", "Hazlan Muhammad Qodri", "Riko", "Fauzan"]
 
+  // State and Hooks
+  const [likes, setLikes] = React.useState(0); // 0 means initial value
+
   function handleClick(): void {
-    console.log('Increment like count');
-    
+    // console.log('Increment like count');
+    setLikes(likes + 1)
   }
+
 
   return (
     <div className="container mx-auto px-20 py-10 border-1 border-red">
@@ -25,7 +31,8 @@ export default function Page() {
         </ul>
 
         {/* Button */}
-        <button onClick={handleClick}> Like </button>
+        <button onClick={handleClick}> Like({likes}) </button>
+        
       </main>
     </div>
   )
